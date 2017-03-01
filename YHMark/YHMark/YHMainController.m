@@ -28,9 +28,11 @@
 - (void)setupUI {
     
     YHOneViewController *oneVC = [YHOneViewController new];
+    oneVC.title = @"自定义标签视图";
     UINavigationController *oneNav = [[UINavigationController alloc] initWithRootViewController:oneVC];
     
     YHTwoViewController *twoVC = [YHTwoViewController new];
+    twoVC.title = @"UICollectionView 标签";
     UINavigationController *twoNav = [[UINavigationController alloc] initWithRootViewController:twoVC];
     
     self.viewControllers = @[oneNav, twoNav];
