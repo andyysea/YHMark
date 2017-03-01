@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EEEA5291E67177200CCE60F /* YHTwoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA5281E67177200CCE60F /* YHTwoViewModel.m */; };
+		7EEEA52C1E67217600CCE60F /* UIColor+hexValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA52B1E67217600CCE60F /* UIColor+hexValue.m */; };
 		7EFF8B411E66BF8500F7217D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B401E66BF8500F7217D /* main.m */; };
 		7EFF8B441E66BF8500F7217D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B431E66BF8500F7217D /* AppDelegate.m */; };
 		7EFF8B4C1E66BF8500F7217D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF8B4B1E66BF8500F7217D /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 		7EFF8B661E66C00300F7217D /* YHMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B651E66C00300F7217D /* YHMainController.m */; };
 		7EFF8B691E66C09700F7217D /* YHOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B681E66C09700F7217D /* YHOneViewController.m */; };
 		7EFF8B6C1E66C0A300F7217D /* YHTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B6B1E66C0A300F7217D /* YHTwoViewController.m */; };
+		7EFF8B6F1E66C26F00F7217D /* ContentCenterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF8B6E1E66C26F00F7217D /* ContentCenterView.m */; };
+		7EFF8B731E66CAA700F7217D /* listData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF8B721E66CAA700F7217D /* listData.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7EEEA5271E67177200CCE60F /* YHTwoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTwoViewModel.h; sourceTree = "<group>"; };
+		7EEEA5281E67177200CCE60F /* YHTwoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTwoViewModel.m; sourceTree = "<group>"; };
+		7EEEA52A1E67217600CCE60F /* UIColor+hexValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+hexValue.h"; sourceTree = "<group>"; };
+		7EEEA52B1E67217600CCE60F /* UIColor+hexValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+hexValue.m"; sourceTree = "<group>"; };
 		7EFF8B3C1E66BF8500F7217D /* YHMark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHMark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF8B401E66BF8500F7217D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EFF8B421E66BF8500F7217D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +52,9 @@
 		7EFF8B681E66C09700F7217D /* YHOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHOneViewController.m; sourceTree = "<group>"; };
 		7EFF8B6A1E66C0A300F7217D /* YHTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHTwoViewController.h; sourceTree = "<group>"; };
 		7EFF8B6B1E66C0A300F7217D /* YHTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHTwoViewController.m; sourceTree = "<group>"; };
+		7EFF8B6D1E66C26F00F7217D /* ContentCenterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentCenterView.h; sourceTree = "<group>"; };
+		7EFF8B6E1E66C26F00F7217D /* ContentCenterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentCenterView.m; sourceTree = "<group>"; };
+		7EFF8B721E66CAA700F7217D /* listData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = listData.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +100,8 @@
 				7EFF8B431E66BF8500F7217D /* AppDelegate.m */,
 				7EFF8B641E66C00300F7217D /* YHMainController.h */,
 				7EFF8B651E66C00300F7217D /* YHMainController.m */,
-				7EFF8B671E66C09700F7217D /* YHOneViewController.h */,
-				7EFF8B681E66C09700F7217D /* YHOneViewController.m */,
-				7EFF8B6A1E66C0A300F7217D /* YHTwoViewController.h */,
-				7EFF8B6B1E66C0A300F7217D /* YHTwoViewController.m */,
+				7EFF8B701E66C27400F7217D /* 自定义视图标签 */,
+				7EFF8B711E66C5ED00F7217D /* UICollcetionView标签 */,
 				7EFF8B3F1E66BF8500F7217D /* Supporting Files */,
 			);
 			path = YHMark;
@@ -116,6 +125,31 @@
 				7EFF8B5B1E66BF8500F7217D /* Info.plist */,
 			);
 			path = YHMarkTests;
+			sourceTree = "<group>";
+		};
+		7EFF8B701E66C27400F7217D /* 自定义视图标签 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF8B671E66C09700F7217D /* YHOneViewController.h */,
+				7EFF8B681E66C09700F7217D /* YHOneViewController.m */,
+				7EFF8B6D1E66C26F00F7217D /* ContentCenterView.h */,
+				7EFF8B6E1E66C26F00F7217D /* ContentCenterView.m */,
+			);
+			name = "自定义视图标签";
+			sourceTree = "<group>";
+		};
+		7EFF8B711E66C5ED00F7217D /* UICollcetionView标签 */ = {
+			isa = PBXGroup;
+			children = (
+				7EFF8B6A1E66C0A300F7217D /* YHTwoViewController.h */,
+				7EFF8B6B1E66C0A300F7217D /* YHTwoViewController.m */,
+				7EEEA5271E67177200CCE60F /* YHTwoViewModel.h */,
+				7EEEA5281E67177200CCE60F /* YHTwoViewModel.m */,
+				7EEEA52A1E67217600CCE60F /* UIColor+hexValue.h */,
+				7EEEA52B1E67217600CCE60F /* UIColor+hexValue.m */,
+				7EFF8B721E66CAA700F7217D /* listData.plist */,
+			);
+			name = "UICollcetionView标签";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFF8B731E66CAA700F7217D /* listData.plist in Resources */,
 				7EFF8B4F1E66BF8500F7217D /* LaunchScreen.storyboard in Resources */,
 				7EFF8B4C1E66BF8500F7217D /* Assets.xcassets in Resources */,
 			);
@@ -219,11 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEEA5291E67177200CCE60F /* YHTwoViewModel.m in Sources */,
 				7EFF8B441E66BF8500F7217D /* AppDelegate.m in Sources */,
 				7EFF8B411E66BF8500F7217D /* main.m in Sources */,
 				7EFF8B6C1E66C0A300F7217D /* YHTwoViewController.m in Sources */,
+				7EFF8B6F1E66C26F00F7217D /* ContentCenterView.m in Sources */,
 				7EFF8B691E66C09700F7217D /* YHOneViewController.m in Sources */,
 				7EFF8B661E66C00300F7217D /* YHMainController.m in Sources */,
+				7EEEA52C1E67217600CCE60F /* UIColor+hexValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +448,7 @@
 				7EFF8B601E66BF8500F7217D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EFF8B611E66BF8500F7217D /* Build configuration list for PBXNativeTarget "YHMarkTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +457,7 @@
 				7EFF8B631E66BF8500F7217D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
