@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ContentCenterView;
+
+@protocol ContentCenterViewDelegate <NSObject>
+
+- (void)contentCenterView:(ContentCenterView *)centerView didClickButtonTag:(NSInteger)tag;
+
+@end
+
+
 
 @interface ContentCenterView : UIView
+
+@property (nonatomic, weak) id <ContentCenterViewDelegate>myDelegate;
 
 /**
  本视图是根据内容来判断,有多少标签就有多大,主要是宽度的判断,

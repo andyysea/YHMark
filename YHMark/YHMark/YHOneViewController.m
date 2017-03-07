@@ -9,7 +9,7 @@
 #import "YHOneViewController.h"
 #import "ContentCenterView.h"
 
-@interface YHOneViewController ()
+@interface YHOneViewController ()<ContentCenterViewDelegate>
 
 @end
 
@@ -22,6 +22,14 @@
 }
 
 
+#pragma mark - ContentCenterViewDelegate
+- (void)contentCenterView:(ContentCenterView *)centerView didClickButtonTag:(NSInteger)tag {
+    
+    NSLog(@"点中的标签的 tag --> %zd", tag);
+}
+
+
+
 #pragma mark - 设置界面元素
 - (void)setupUI {
     self.title = @"自定义标签视图";
@@ -32,6 +40,8 @@
     
     ContentCenterView *markView = [[ContentCenterView alloc] initWithFrame:CGRectMake(0, 100, self.view.bounds.size.width - 30, 50) dataArr:dataArray maxWidth:self.view.bounds.size.width - 30];
 //    markView.backgroundColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0];
+    
+    markView.myDelegate = self;
     
     markView.center = self.view.center;
     

@@ -28,6 +28,17 @@
 
 @implementation ContentCenterView
 
+
+#pragma mark - 按钮点击方法
+- (void)buttonClick:(UIButton *)button {
+    NSInteger tag = button.tag;
+    // 回调点钟的按钮是哪个
+    if (self.myDelegate && [self.myDelegate respondsToSelector:@selector(contentCenterView:didClickButtonTag:)]) {
+        [self.myDelegate contentCenterView:self didClickButtonTag:tag];
+    }
+}
+
+#pragma mark - 初始化方法
 - (instancetype)initWithFrame:(CGRect)frame dataArr:(NSArray *)dataArray maxWidth:(CGFloat)maxWidth {
     self = [super initWithFrame:frame];
     if (self) {
@@ -48,9 +59,9 @@
                 [button setTitle:titleText forState:UIControlStateNormal];
                 [button setTitleColor:[UIColor colorWithRed:90/255.0 green:130/255.0 blue:160/255.0 alpha:1.0] forState:UIControlStateNormal];
                 [button setBackgroundImage:[UIImage imageNamed:@"button_bg_light"] forState:UIControlStateNormal];
-                button.enabled = NO;
-
-        
+//                button.enabled = NO;  如果不能点击就禁用
+                button.tag = i;
+                [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
                 
                 CGRect rect = [titleText boundingRectWithSize:CGSizeMake(self.bounds.size.width , 24) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading attributes:@{NSFontAttributeName:button.titleLabel.font} context:nil];
                 
