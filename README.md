@@ -8,7 +8,7 @@
 |显示效果|
 --------------
 
-<img src="https://github.com/andyysea/YHMark/blob/master/DynamicGraph.gif "width=200 height=360 />
+<img src="https://github.com/andyysea/YHMark/blob/master/DynamicGraph.gif" width=200 height=360 />
 
 
 <br/>
